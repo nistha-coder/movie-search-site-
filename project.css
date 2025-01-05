@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  background-image: url("https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Q2luZW1hJTIwTGlnaHR8ZW58MHx8MHx8fDA%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #f6efef;
+  text-align: center;
+}
+
+#search-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#movie-title {
+  width: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#search-movie-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-movie-btn:hover {
+  background-color: #218838;
+}
+
+#movies-container,
+#favorites-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.movie-card button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.movie-card button.favorite-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.movie-card button.favorite-btn:hover {
+  background-color: #0056b3;
+}
+
+.movie-card button.remove-favorite-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.movie-card button.remove-favorite-btn:hover {
+  background-color: #c82333;
+}
+.movie-card .rating {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff9900; 
+  margin: 5px 0;
+}
